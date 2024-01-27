@@ -1,1 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+:root{
+    --main: #2BBD63;
+    --secondary: #66A7BD;
+    --shadow: #B172C2;
+    --light: #FFF2E6;
+    --light2: #DCFFA3;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Cormorant', serif;
+}

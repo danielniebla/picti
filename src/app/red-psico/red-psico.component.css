@@ -1,0 +1,13 @@
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 96%;
+}
+.square{
+    margin: 30px;
+    border-radius: 50px;
+    background-color: var(--light2);
+    width: 90%;
+    padding: 30px;
+
+}

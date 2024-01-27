@@ -1,0 +1,20 @@
+<div class="grid">
+    <div class="user">
+        <h3>Celphone number:</h3>
+        <input 
+        type="text" 
+        [(ngModel)]="cel" >
+        <div class="flex">
+            <h4>psychologist</h4>
+            <img  
+            class="patient"
+            [src]="patient ? '../../assets/icons8-alternar-encendido-96.png' : '../../assets/icons8-alternar-apagado-80.png'" 
+            alt="type" 
+            (click)="pat()"
+          />
+          <h4>Patient</h4>
+        </div>
+        <button (click)="logIn()" >Log-in</button>
+    </div>
+    <img src="../../assets/psicologia.webp" alt="">
+</div>

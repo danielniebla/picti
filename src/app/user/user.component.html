@@ -1,0 +1,30 @@
+<div class="grid a">
+   <img src="../../assets/cerrar-sesion (1).png" (click)="logOut()" class="log"> 
+    <div class="user">
+        <h3>Patient name:</h3>
+        <input 
+        type="text"
+        [(ngModel)]="name" >
+        <h3>Celphone number:</h3>
+        <input 
+        type="text"
+        [(ngModel)]="number" >
+        <h3>Socioeconomic study:</h3>
+        <input 
+        type="text" 
+        [(ngModel)]="study" >
+  
+    </div>
+    <img src="../../assets/psicologia.webp" alt="">
+</div>
+<div class="grid b">
+    <div class="psico head">psychologist</div>
+    <div class="status head">process status</div>
+    <div class="price head">agreed cost</div>
+    <ng-container *ngFor="let data of filteredMediaData">
+        <div class="bod psico">{{data.psicologo}}</div>
+        <div class="bod status">{{status(data.status)}}</div>
+        <div class="bod price">{{data.precio}}</div>
+
+    </ng-container>
+</div>

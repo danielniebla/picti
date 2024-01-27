@@ -1,0 +1,26 @@
+.grid{
+    margin: 50px 10%;
+    background-color: var(--light);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    border-radius: 30px;
+
+}
+input{
+    background-color: transparent;
+    border: none ;
+    border-bottom: 1px solid var(--main);
+}
+.user{
+    margin: auto;
+}
+.patient{
+    height: 30px;
+    width: 30px;
+    margin: auto;
+}
+.flex{
+    display: flex;
+    justify-content: space-around;
+}

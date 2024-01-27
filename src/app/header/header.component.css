@@ -1,0 +1,15 @@
+.header{
+    height: 70px;
+    background-color:var(--secondary) ;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+h1{
+    font-weight: 600;
+    color: var(--light);
+    margin: auto;
+    padding: 0;
+}

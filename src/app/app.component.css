@@ -1,0 +1,16 @@
+.flex{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    width: 100%;
+    height: 100%;
+    margin-top: 70px;
+}
+.nav-bar{
+    grid-column: 1 / 2;
+    max-width: 300px;
+    min-width: 50px;
+    overflow: hidden;
+}
+.rut{
+    grid-column: 2 / 3;
+}

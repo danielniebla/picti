@@ -1,0 +1,38 @@
+.grid{
+    margin: 50px 10%;
+    background-color: var(--light);
+    padding: 20px;
+    border-radius: 30px;
+
+}
+.a{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.b{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+input{
+    background-color: transparent;
+    border: none ;
+    border-bottom: 1px solid var(--main);
+}
+.user{
+    margin: auto;
+}
+.log{
+    position: absolute;
+    margin: 20px;
+    width: 30px;
+    height: 30px;
+}
+.head{
+    height: 40px;
+    background-color: var(--light2);
+    padding-left: 10px ;
+}
+.bod{
+    height: 40px;
+    padding-left: 10px ;
+}

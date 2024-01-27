@@ -1,0 +1,11 @@
+<div class="grid">
+    <ng-container *ngFor="let psicologo of psicologo">
+        <div class="square">
+            <h3>{{psicologo.nombre}}</h3>
+            <h3>{{psicologo.cedula}}</h3>
+            <h3>{{psicologo.rango}}</h3>
+            <button (click)="solicitar(psicologo.id)">request</button>
+        </div>
+    </ng-container>
+</div>
+

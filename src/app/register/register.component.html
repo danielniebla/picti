@@ -1,0 +1,47 @@
+<div class="grid">
+    <div class="user">
+        <div class="flex">
+            <h4>psychologist</h4>
+            <img  
+            class="patient"
+            [src]="patient ? '../../assets/icons8-alternar-encendido-96.png' : '../../assets/icons8-alternar-apagado-80.png'" 
+            alt="type" 
+            (click)="pat()"
+          />
+          <h4>Patient</h4>
+        </div>
+        <ng-container *ngIf="patient; else psico">
+            <h3>Patient name:</h3>
+            <input type="text" [(ngModel)]="nombre">
+            <h3>Celphone number:</h3>
+            <input type="text" [(ngModel)]="celular">
+            <h3>Socioeconomic study:</h3>
+            <input type="text" [(ngModel)]="socioeconomic"><br>
+            <div class="flex">
+            <button (click)="signUpPatient()">sign-up</button>
+            </div>
+        </ng-container>
+        <ng-template #psico >
+            <h3>psychologist name:</h3>
+            <input 
+            type="text" 
+            [(ngModel)]="pnombre" >
+            <h3>Celphone number:</h3>
+            <input 
+            type="text"
+            [(ngModel)]="pcelular" >
+            <h3>Studies:</h3>
+            <input 
+            type="text" 
+            [(ngModel)]="cedula" >
+            <h3>accepted price range:</h3>
+            <input 
+            type="text" 
+            [(ngModel)]="precio" ><br>
+            <div class="flex">
+                <button (click)="signUpPsycho()">sign-up</button>
+            </div>
+        </ng-template>
+    </div>
+    <img src="../../assets/psicologia.webp" alt="">
+</div>
